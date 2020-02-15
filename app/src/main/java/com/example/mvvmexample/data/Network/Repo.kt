@@ -24,7 +24,6 @@ class Repo {
 //                    isAdmin!!
 //                )
 
-//                document.toObject(User::class.java)
                 listData.add(document.toObject(User::class.java))
             }
 

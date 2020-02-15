@@ -13,10 +13,16 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+    //<editor-fold desc="Vars">
+
     private lateinit var adapter: MainAdapter
     private val viewModel by lazy {
         ViewModelProvider(this).get(MainViewModel::class.java)
     }
+
+    //</editor-fold>
+
+    //<editor-fold desc="Life Cycle">
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,8 +35,12 @@ class MainActivity : AppCompatActivity() {
         observeData()
     }
 
+    //</editor-fold>
+
+    //<editor-fold desc="Observe Data">
+
     private fun observeData(){
-        shimmer_view_container.startShimmer() // If auto-start is set to false
+        shimmer_view_container.startShimmer()
         viewModel.fetchUserData().observe(this, Observer {
             shimmer_view_container.hideShimmer()
             shimmer_view_container.visibility = GONE
@@ -39,4 +49,6 @@ class MainActivity : AppCompatActivity() {
             adapter.notifyDataSetChanged()
         })
     }
+
+    //</editor-fold>
 }
