@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/Spotify-Test" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/android-PictureInPicture-master/MOV" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/circularsform/circularsform" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/circularsspdf" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/newcouponswithfirebase" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/spotify-web-api-android" vcs="Git" />
+  </component>
+</project>
